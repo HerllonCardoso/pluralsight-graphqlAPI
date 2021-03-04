@@ -10,13 +10,15 @@ class SessionAPI extends DataSource {
   initialize(config) {}
 
   getSessions(args) {
-    return _.filter(sessions, args)
+    return _.filter(sessions, args);
   }
 
-  getSessionsById() {
-    const session = _.filter(session, { id: parseInt(id) });
+  getSessionById(id) {
+    const session = _.filter(sessions, { id: parseInt(id) });
     return session[0];
   }
 }
 
 module.exports = SessionAPI;
+
+
