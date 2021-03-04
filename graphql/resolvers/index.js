@@ -1,3 +1,3 @@
 const sessionResolver = require('./session.resolver');
 
-module.exports = [sessionResolver];
+module.exports = sessionResolver;
