@@ -39,5 +39,6 @@ module.exports = gql`
         reason: "Too many sessions do not fit into a single track we will be migrating to a track"
       )
     level: String
+    speakers: [Speaker]
   }
 `;

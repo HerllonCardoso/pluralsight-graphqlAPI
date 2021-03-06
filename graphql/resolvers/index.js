@@ -1,3 +1,4 @@
+const queryResolver = require('./query.resolver');
 const sessionResolver = require('./session.resolver');
 
-module.exports = sessionResolver;
+module.exports = [sessionResolver, queryResolver ];

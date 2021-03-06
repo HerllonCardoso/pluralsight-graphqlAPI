@@ -12,7 +12,9 @@ class SpeakerAPI extends RESTDataSource {
   }
 
   async getSpeakers() {
-    data = await this.get('/');
+    const data = await this.get('/');
     return data;
   }
 }
+
+module.exports = SpeakerAPI;
